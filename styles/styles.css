@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+h1{
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+span.strong{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.header-subText{
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.box{
+    width: 400px;
+    border-top: solid 4px black;
+    margin: 1rem;
+    padding: 2rem 1rem;
+    box-shadow: -2px 16px 19px -5px rgba(0,22,122,0.21);
+    height: 250px;
+    position: relative;
+}
+
+.supervisor{
+    border-top: solid 4px #56DAC5;
+}
+.team{
+    border-top: solid 4px #FE788D;
+}
+.calculator{
+    border-top: solid 4px #56AAF1;
+}
+.karma{
+    border-top: solid 4px #EEB349;
+}
+
+.push{
+    transform: translateY(50%);
+}
+h2{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.box-text{
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+.box-image{
+    position: absolute;
+    bottom:  20px;
+    right:  30px;
+}
+
+footer{
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 468px) {
+    .container, header, footer{
+        margin-left:  0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+
+    .push{
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 1295px) {
+
+    .push{
+        transform: translateY(0%);
+    }
+}
